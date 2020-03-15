@@ -1,4 +1,6 @@
 language: python
+install:
+  - pip install codecov
 script:
     - python main.py
     - bash <(curl -s https://codecov.io/bash)
