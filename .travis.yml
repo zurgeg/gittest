@@ -2,5 +2,5 @@ language: python
 install:
   - pip install codecov
 script:
-    - python main.py
+    - coverage run main.py
     - bash <(curl -s https://codecov.io/bash)
