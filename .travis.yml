@@ -4,3 +4,5 @@ install:
 script:
     - coverage run main.py
     - bash <(curl -s https://codecov.io/bash)
+after_success:
+  - codecov -t
